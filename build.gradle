@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'maven'
+    id 'maven-publish'
     id 'war'
 }
 
@@ -19,7 +19,8 @@ allprojects{
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation 'com.github.diarmaidgeever:SoftwareEng_III:v1.0'
+    implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.0.RELEASE'
+    implementation 'com.github.diarmaidgeever:CT417_IA:v1.1'
 }
 
 test {
